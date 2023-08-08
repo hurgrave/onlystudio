@@ -47,6 +47,13 @@
 				<?echo $arItem["PREVIEW_TEXT"];?>
 			<?endif;?>
 			</div>
+			
+			<!--Надо бы зафигачить время публикации-->
+			<div style="font-size: x-small; padding: 8px 0px 5px 0px;">
+			<?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
+				<?echo $arItem["DISPLAY_ACTIVE_FROM"]?>
+			<?endif?>	
+			</div>
 		</div></a>
 	
 <?endforeach;?>
@@ -56,3 +63,6 @@
 </div>
 </body>
 </html>
+
+
+		
